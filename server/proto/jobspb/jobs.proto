@@ -23,6 +23,14 @@ message CreateJobResponse {
     Job job = 1;
 }
 
+message GetAllJobsRequest {
+
+}
+
+message GetAllJobsResponse {
+    repeated Job jobs = 1;
+}
+
 service JobService {
     rpc CreateJob (CreateJobRequest) returns (CreateJobResponse) {
         option (google.api.http) = {
@@ -30,4 +38,10 @@ service JobService {
             body: "job"
         };
     };
+
+    rpc GetAllJobs (GetAllJobsRequest) returns (GetAllJobsResponse) {
+        option (google.api.http) = {
+            get: "/api/job"
+        };
+    }
 }

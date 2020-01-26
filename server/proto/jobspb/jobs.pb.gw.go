@@ -65,6 +65,24 @@ func local_request_JobService_CreateJob_0(ctx context.Context, marshaler runtime
 
 }
 
+func request_JobService_GetAllJobs_0(ctx context.Context, marshaler runtime.Marshaler, client JobServiceClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
+	var protoReq GetAllJobsRequest
+	var metadata runtime.ServerMetadata
+
+	msg, err := client.GetAllJobs(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
+	return msg, metadata, err
+
+}
+
+func local_request_JobService_GetAllJobs_0(ctx context.Context, marshaler runtime.Marshaler, server JobServiceServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
+	var protoReq GetAllJobsRequest
+	var metadata runtime.ServerMetadata
+
+	msg, err := server.GetAllJobs(ctx, &protoReq)
+	return msg, metadata, err
+
+}
+
 // RegisterJobServiceHandlerServer registers the http handlers for service JobService to "mux".
 // UnaryRPC     :call JobServiceServer directly.
 // StreamingRPC :currently unsupported pending https://github.com/grpc/grpc-go/issues/906.
@@ -87,6 +105,26 @@ func RegisterJobServiceHandlerServer(ctx context.Context, mux *runtime.ServeMux,
 		}
 
 		forward_JobService_CreateJob_0(ctx, mux, outboundMarshaler, w, req, resp, mux.GetForwardResponseOptions()...)
+
+	})
+
+	mux.Handle("GET", pattern_JobService_GetAllJobs_0, func(w http.ResponseWriter, req *http.Request, pathParams map[string]string) {
+		ctx, cancel := context.WithCancel(req.Context())
+		defer cancel()
+		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
+		rctx, err := runtime.AnnotateIncomingContext(ctx, mux, req)
+		if err != nil {
+			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
+			return
+		}
+		resp, md, err := local_request_JobService_GetAllJobs_0(rctx, inboundMarshaler, server, req, pathParams)
+		ctx = runtime.NewServerMetadataContext(ctx, md)
+		if err != nil {
+			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
+			return
+		}
+
+		forward_JobService_GetAllJobs_0(ctx, mux, outboundMarshaler, w, req, resp, mux.GetForwardResponseOptions()...)
 
 	})
 
@@ -151,13 +189,37 @@ func RegisterJobServiceHandlerClient(ctx context.Context, mux *runtime.ServeMux,
 
 	})
 
+	mux.Handle("GET", pattern_JobService_GetAllJobs_0, func(w http.ResponseWriter, req *http.Request, pathParams map[string]string) {
+		ctx, cancel := context.WithCancel(req.Context())
+		defer cancel()
+		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
+		rctx, err := runtime.AnnotateContext(ctx, mux, req)
+		if err != nil {
+			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
+			return
+		}
+		resp, md, err := request_JobService_GetAllJobs_0(rctx, inboundMarshaler, client, req, pathParams)
+		ctx = runtime.NewServerMetadataContext(ctx, md)
+		if err != nil {
+			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
+			return
+		}
+
+		forward_JobService_GetAllJobs_0(ctx, mux, outboundMarshaler, w, req, resp, mux.GetForwardResponseOptions()...)
+
+	})
+
 	return nil
 }
 
 var (
 	pattern_JobService_CreateJob_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"api", "job"}, "", runtime.AssumeColonVerbOpt(true)))
+
+	pattern_JobService_GetAllJobs_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"api", "job"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (
 	forward_JobService_CreateJob_0 = runtime.ForwardResponseMessage
+
+	forward_JobService_GetAllJobs_0 = runtime.ForwardResponseMessage
 )

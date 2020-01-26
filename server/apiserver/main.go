@@ -2,13 +2,11 @@ package main
 
 import (
 	"fmt"
-	_ "github.com/golang-migrate/migrate/v4/database/postgres"
-	_ "github.com/golang-migrate/migrate/v4/source/github"
 	"github.com/jmoiron/sqlx"
-	_ "github.com/lib/pq"
 	"github.com/nickmurr/docker-grpc-golang-api/apiserver/serverconfig"
 	"github.com/nickmurr/docker-grpc-golang-api/controller/jobscontroller"
 	"github.com/nickmurr/docker-grpc-golang-api/proto/jobspb"
+	"github.com/nickmurr/docker-grpc-golang-api/store/sqlstore"
 	"log"
 	"net"
 	"os"
@@ -24,6 +22,8 @@ func main() {
 	}
 
 	db, err := newDb(config.DatabaseURL)
+	store := sqlstore.New(db)
+
 	if err != nil {
 		log.Fatalf("Error connecting to DB %v", err)
 	}
@@ -31,7 +31,7 @@ func main() {
 
 	grpcServer, httpServer := serverconfig.CreateGrpcServer()
 
-	jobspb.RegisterJobServiceServer(grpcServer, &jobscontroller.JobsApi{})
+	jobspb.RegisterJobServiceServer(grpcServer, &jobscontroller.JobsApi{Store: store})
 
 	go serverconfig.RunHttpServer(httpServer)
 	go serverconfig.RunGrpcServer(grpcServer, lis)
