@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a24457-1655-40ba-9e0e-7fba17bca0e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/apiserver/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/apiserver/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.sum" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,47 +22,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/apiserver/main.go">
+        <entry file="file://$PROJECT_DIR$/nginx/default.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-              <folding>
-                <element signature="e#19#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go">
+        <entry file="file://$PROJECT_DIR$/server/proto/jobspb/jobs.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="18" />
-              <folding>
-                <element signature="e#22#119#0" expanded="true" />
-                <element signature="n#!!block;n#RunGrpcServer#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="17" />
-              <folding>
-                <element signature="e#22#187#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="342">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -78,6 +54,7 @@
       <find>Register</find>
       <find>RegisterJobServiceServer</find>
       <find>NewSe</find>
+      <find>api</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -90,25 +67,30 @@
         <option value="$PROJECT_DIR$/server/docker-compose.yml" />
         <option value="$PROJECT_DIR$/server/proto/userspb/users.proto" />
         <option value="$PROJECT_DIR$/server/generate.sh" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/server/proto/jobspb/jobs.proto" />
         <option value="$PROJECT_DIR$/server/apiserver/jobs-server.go" />
         <option value="$PROJECT_DIR$/nginx/Dockerfile.dev" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/server/Dockerfile.dev" />
         <option value="$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go" />
-        <option value="$PROJECT_DIR$/nginx/default.conf" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go" />
         <option value="$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go" />
         <option value="$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go" />
+        <option value="$PROJECT_DIR$/server/apiserver/jobsapi/jobs-server.go" />
+        <option value="$PROJECT_DIR$/server/apiserver/serverconfig/config.go" />
+        <option value="$PROJECT_DIR$/db/Dockerfile.dev" />
+        <option value="$PROJECT_DIR$/db/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/server/apiserver/main.go" />
+        <option value="$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go" />
+        <option value="$PROJECT_DIR$/nginx/default.conf" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-261" />
+    <option name="y" value="68" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -148,8 +130,14 @@
               <item name="docker-grpc-golang-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-grpc-golang-api" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="apiserver" type="462c0819:PsiDirectoryNode" />
-              <item name="serverconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-grpc-golang-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-grpc-golang-api" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+              <item name="jobspb" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,6 +159,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Nikita\Mine\go\docker-grpc-golang-api\server\controller\jobscontroller" />
       <recent name="D:\Nikita\Mine\go\docker-grpc-golang-api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -202,7 +191,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -210,9 +199,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
       <window_info anchor="bottom" id="GraphQL" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
@@ -239,9 +228,6 @@
     <entry file="file://$PROJECT_DIR$/client/Dockerfile.dev">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/Dockerfile.dev">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrator/Dockerfile.dev">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -262,18 +248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/proto/jobspb/jobs.pb.gw.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1620" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/proto/jobspb/jobs.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2862">
@@ -288,24 +262,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/proto/jobspb/jobs.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nginx/Dockerfile.dev">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -323,42 +283,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/default.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="18" />
-          <folding>
-            <element signature="e#22#119#0" expanded="true" />
-            <element signature="n#!!block;n#RunGrpcServer#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -372,13 +300,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/proto/jobspb/jobs.pb.gw.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2454">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#22#119#0" expanded="true" />
+            <element signature="n#!!block;n#RunGrpcServer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/apiserver/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="157">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
             <element signature="e#19#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/proto/jobspb/jobs.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>

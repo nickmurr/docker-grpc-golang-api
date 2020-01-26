@@ -1,4 +1,4 @@
-package jobsserver
+package jobscontroller
 
 import (
 	"context"
@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-type JobsServer struct{}
+type JobsApi struct{}
 
-func (JobsServer) CreateJob(ctx context.Context, req *jobspb.CreateJobRequest) (*jobspb.CreateJobResponse, error) {
+func (j *JobsApi) CreateJob(ctx context.Context, req *jobspb.CreateJobRequest) (*jobspb.CreateJobResponse, error) {
 	meta, ok := metadata.FromIncomingContext(ctx)
 	fmt.Println(meta.Get("Authorization"))
 	if !ok {

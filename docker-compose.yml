@@ -1,5 +1,21 @@
 version: "3"
 services:
+  postgres:
+    build: ./db
+    ports:
+      - 7557:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=postgres
+      - DATABASE_HOST=postgres
+    volumes:
+      - data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   nginx:
     restart: always
     build:
@@ -8,7 +24,16 @@ services:
     ports:
       - "3050:80"
   api:
+    depends_on:
+      - postgres
     restart: on-failure
     build:
       dockerfile: Dockerfile.dev
       context: ./server
+    environment:
+      #      - BIND_ADDR=:5000
+      #      - LOG_LEVEL=debug
+      - DATABASE_URL=user=postgres password=docker host=postgres dbname=postgres port=5432 sslmode=disable
+      - TEST_DATABASE_URL=user=postgres password=docker host=postgres dbname=restapi_test port=5432 sslmode=disable
+volumes:
+  data:
