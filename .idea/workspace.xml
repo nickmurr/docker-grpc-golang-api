@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59a24457-1655-40ba-9e0e-7fba17bca0e0" name="Default Changelist" comment="" />
+    <list default="true" id="59a24457-1655-40ba-9e0e-7fba17bca0e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apiserver/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/apiserver/main.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/apiserver/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="48" column="27" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="27" />
+            <state relative-caret-position="605">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
               <folding>
                 <element signature="e#19#43#0" expanded="true" />
               </folding>
@@ -23,28 +30,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx/default.conf">
+        <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="540">
+              <caret line="61" column="18" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="18" />
+              <folding>
+                <element signature="e#22#119#0" expanded="true" />
+                <element signature="n#!!block;n#RunGrpcServer#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go">
+        <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/generate.sh">
+        <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            <state relative-caret-position="684">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="17" />
+              <folding>
+                <element signature="e#22#187#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +81,9 @@
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -81,6 +98,10 @@
         <option value="$PROJECT_DIR$/server/Dockerfile.dev" />
         <option value="$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go" />
         <option value="$PROJECT_DIR$/nginx/default.conf" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go" />
+        <option value="$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go" />
+        <option value="$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go" />
         <option value="$PROJECT_DIR$/server/apiserver/main.go" />
       </list>
     </option>
@@ -90,6 +111,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -120,6 +144,13 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="apiserver" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="docker-grpc-golang-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-grpc-golang-api" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="apiserver" type="462c0819:PsiDirectoryNode" />
+              <item name="serverconfig" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,6 +159,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -180,10 +212,10 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="GraphQL" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -284,13 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/generate.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -305,10 +330,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/jobs-server/jobs-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/http-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/grpc-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="e#22#119#0" expanded="true" />
+            <element signature="n#!!block;n#RunGrpcServer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/apiserver/serverconfig/mux-server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#22#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/apiserver/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="27" />
+        <state relative-caret-position="605">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
             <element signature="e#19#43#0" expanded="true" />
           </folding>
