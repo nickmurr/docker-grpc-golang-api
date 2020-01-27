@@ -8,6 +8,6 @@ COPY . .
 
 RUN go build -v ./apiserver/main.go
 
-EXPOSE 50051 8081
+EXPOSE 50051 8081 9090
 
 CMD ["./main"]

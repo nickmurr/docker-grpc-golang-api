@@ -15,7 +15,7 @@ import (
 func main() {
 	config := serverconfig.NewConfig()
 
-	lis, err := net.Listen("tcp", "0.0.0.0:50051")
+	lis, err := net.Listen("tcp", ":50051")
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)
 	}
@@ -41,4 +41,3 @@ func main() {
 	signal.Notify(ch, os.Interrupt)
 	<-ch
 }
-

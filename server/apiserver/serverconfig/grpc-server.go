@@ -13,10 +13,10 @@ import (
 )
 
 var (
-	http1Port = flag.Int("http1_port", 9090, "Port to listen with HTTP1.1 with TLS on.")
+	httpPort = flag.Int("http1_port", 9090, "Port to listen with HTTP1.1 with TLS on.")
 	http2Port = flag.Int("http2_port", 50052, "Port to listen with HTTP2 with TLS on.")
-	// tlsCertFilePath = flag.String("tls_cert_file", "./calculator/cert/server.crt", "Path to the CRT/PEM file.")
-	// tlsKeyFilePath  = flag.String("tls_key_file", "./calculator/cert/server.key", "Path to the private key file.")
+	tlsCertFilePath = flag.String("tls_cert_file", "./certs/domain.crt", "Path to the CRT/PEM file.")
+	tlsKeyFilePath  = flag.String("tls_key_file", "./certs/domain.key", "Path to the private key file.")
 )
 
 func CreateGrpcServer() (*grpc.Server, *http.Server) {
@@ -43,7 +43,7 @@ func CreateGrpcServer() (*grpc.Server, *http.Server) {
 	}
 
 	http1Server := http.Server{
-		Addr:    fmt.Sprintf(":%d", *http1Port),
+		Addr:    fmt.Sprintf(":%d", *httpPort),
 		Handler: http.HandlerFunc(handler),
 	}
 
@@ -54,6 +54,7 @@ func CreateGrpcServer() (*grpc.Server, *http.Server) {
 
 func RunHttpServer(httpServer *http.Server) {
 	fmt.Println("Run http:2.0 server")
+	// if err := httpServer.ListenAndServeTLS(*tlsCertFilePath, *tlsKeyFilePath); err != nil {
 	if err := httpServer.ListenAndServe(); err != nil {
 		grpclog.Fatalf("failed starting http2 server: %v", err)
 	}

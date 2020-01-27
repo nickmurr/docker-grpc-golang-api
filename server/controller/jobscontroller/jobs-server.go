@@ -28,6 +28,7 @@ func (j *JobsApi) CreateJob(ctx context.Context, req *jobspb.CreateJobRequest) (
 }
 
 func (j *JobsApi) GetAllJobs(ctx context.Context, req *jobspb.GetAllJobsRequest) (*jobspb.GetAllJobsResponse, error) {
+	fmt.Println(req)
 	var data []*jobspb.Job
 
 	for i := 0; i <= 10; i++ {
