@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a24457-1655-40ba-9e0e-7fba17bca0e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrator/migrations/1_create_jobs.down.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrator/migrations/1_create_jobs.up.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/model/jobs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/store/errors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/store/repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/store/sqlstore/jobsrepository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/store/sqlstore/store.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/store/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrator/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/migrator/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile.dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/apiserver/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/apiserver/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apiserver/serverconfig/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/apiserver/serverconfig/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/google/api/annotations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/google/api/annotations.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/google/api/http.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/google/api/http.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/google/api/httpbody.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/google/api/httpbody.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/google/rpc/code.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/google/rpc/code.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/google/rpc/error_details.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/google/rpc/error_details.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/google/rpc/status.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/google/rpc/status.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/proto/jobspb/jobs.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/jobspb/jobs.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/proto/jobspb/jobs.pb.gw.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/jobspb/jobs.pb.gw.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/proto/jobspb/jobs.proto" beforeDir="false" afterPath="$PROJECT_DIR$/server/proto/jobspb/jobs.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/store/sqlstore/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/store/sqlstore/store.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/apiserver/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+            <state relative-caret-position="67">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -69,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/store/sqlstore/store.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state>
+              <caret column="16" selection-start-column="8" selection-end-column="16" />
               <folding>
                 <element signature="e#18#246#0" expanded="true" />
               </folding>
@@ -125,7 +100,6 @@
         <option value="$PROJECT_DIR$/server/store/errors.go" />
         <option value="$PROJECT_DIR$/server/store/store.go" />
         <option value="$PROJECT_DIR$/server/store/repository.go" />
-        <option value="$PROJECT_DIR$/server/store/sqlstore/store.go" />
         <option value="$PROJECT_DIR$/server/model/jobs.go" />
         <option value="$PROJECT_DIR$/migrator/Dockerfile" />
         <option value="$PROJECT_DIR$/migrator/migrations/1_create_jobs.down.sql" />
@@ -135,6 +109,7 @@
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/server/apiserver/serverconfig/config.go" />
         <option value="$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go" />
+        <option value="$PROJECT_DIR$/server/store/sqlstore/store.go" />
         <option value="$PROJECT_DIR$/server/apiserver/main.go" />
       </list>
     </option>
@@ -219,6 +194,13 @@
               <item name="docker-grpc-golang-api" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-grpc-golang-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-grpc-golang-api" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlstore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker-grpc-golang-api" type="b2602c69:ProjectViewProjectNode" />
@@ -514,16 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/store/sqlstore/store.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#18#246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/controller/jobscontroller/jobs-server.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -538,10 +510,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/store/sqlstore/store.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#18#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/apiserver/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+        <state relative-caret-position="67">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
         </state>
       </provider>
     </entry>

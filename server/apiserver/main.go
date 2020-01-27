@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/jmoiron/sqlx"
 	"github.com/nickmurr/docker-grpc-golang-api/apiserver/serverconfig"
 	"github.com/nickmurr/docker-grpc-golang-api/controller/jobscontroller"
 	"github.com/nickmurr/docker-grpc-golang-api/proto/jobspb"
@@ -21,7 +20,7 @@ func main() {
 		log.Fatalf("Failed to listen: %v", err)
 	}
 
-	db, err := newDb(config.DatabaseURL)
+	db, err := sqlstore.NewDb(config.DatabaseURL)
 	store := sqlstore.New(db)
 
 	if err != nil {
@@ -43,15 +42,3 @@ func main() {
 	<-ch
 }
 
-func newDb(databaseURL string) (*sqlx.DB, error) {
-	db, err := sqlx.Open("postgres", databaseURL)
-	if err != nil {
-		return nil, err
-	}
-
-	if err := db.Ping(); err != nil {
-		return nil, err
-	}
-
-	return db, nil
-}

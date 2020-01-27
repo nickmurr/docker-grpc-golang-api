@@ -31,3 +31,16 @@ func (s *Store) Jobs() store.JobsRepository {
 
 	return s.jobsRepository
 }
+
+func NewDb(databaseURL string) (*sqlx.DB, error) {
+	db, err := sqlx.Open("postgres", databaseURL)
+	if err != nil {
+		return nil, err
+	}
+
+	if err := db.Ping(); err != nil {
+		return nil, err
+	}
+
+	return db, nil
+}
