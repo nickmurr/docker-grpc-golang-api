@@ -28,10 +28,9 @@ func (j *JobsApi) CreateJob(ctx context.Context, req *jobspb.CreateJobRequest) (
 }
 
 func (j *JobsApi) GetAllJobs(ctx context.Context, req *jobspb.GetAllJobsRequest) (*jobspb.GetAllJobsResponse, error) {
-	fmt.Println(req)
 	var data []*jobspb.Job
 
-	for i := 0; i <= 10; i++ {
+	for i := 0; i <= 1000; i++ {
 		data = append(data, &jobspb.Job{
 			Id:          fmt.Sprintf("%v", i),
 			Title:       fmt.Sprintf("%v Title", i),
